@@ -11,6 +11,7 @@ public class Name {
         }
 
         System.out.println("You entered the correct name!");
+        sc.close();
 
 
     }
