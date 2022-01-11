@@ -8,7 +8,7 @@ public class Prime {
         int total = hi - lo;
         int prime = total;
         for (int i = 0; i < total; i++) {
-            if (prime % 2) {
+            if (prime % 2 == 0) {
                 return false;
             } else {
                 return true; 
