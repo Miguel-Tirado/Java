@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math.*;
 
 public class JavaBasics {
     public static void main(String[] args) {
         //Initiate Scanner 
         Scanner sc = new Scanner(System.in);
 
+        /*
         //Exercise 1 
         System.out.println("Hello");
         System.out.println("Miguel Tirado.");
@@ -62,6 +64,92 @@ public class JavaBasics {
 
         System.out.printf("Sum = %d\nSub = %d\nMult = %d\nDiv = %d\nMod = %d\n",sum,sub,mult,div,mod);
         System.out.println("--------------------------");
+
+        //Exercise 7 
+        int num;
+        System.out.print("Input a number: ");
+        num = sc.nextInt();
+        for(int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+        }
+        System.out.println("--------------------------");
+
+        //Exercise 8 
+        System.out.println("     J    a   v     v     a  ");
+        System.out.println("     J   a  a  v   v    a   a");
+        System.out.println("  J  J  aaaaaa  v v    aaaaaaa");
+        System.out.println("   JJ  a      a  v    a       a");
+        System.out.println("--------------------------------");
+
+        //Excericise 10 
+        double result = 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+        System.out.println(result);
+        System.out.println("--------------------------------");
+
+        //Exercise 11 
+        double radius;
+        System.out.print("Radius = ");
+        radius = sc.nextDouble();
+        System.out.println("Perimeter is = " + (2* Math.PI * radius));
+        System.out.println("Area is = " + (Math.PI * radius * radius));
+        System.out.println("--------------------------------");
+
+        //Exercise 12 
+        int anum1, anum2, anum3;
+        System.out.print("Enter first number: ");
+        anum1 = sc.nextInt();
+        System.out.print("Enter Second number: ");
+        anum2 = sc.nextInt();
+        System.out.print("Enter third number: ");
+        anum3 = sc.nextInt();
+        System.out.println("The average is the following: " + ((anum1 + anum2 + anum3)/3));
+        System.out.println("--------------------------------");
+
+        
+        //Exercise 13 
+        double width, height;
+        System.out.print("width = ");
+        width = sc.nextDouble();
+        System.out.print("height = ");
+        height = sc.nextDouble();
+
+    
+        System.out.println("Area is " + width + " * " + height + " = " + (width * height));
+        System.out.println("Perimiter is 2 * " + width + " + " + height + " = " + (2*(width + height)));
+
+        */
+        //Exercise 14 
+        for (int i = 0; i < 4; i ++) {
+            System.out.println("* * * * * * ==================================");
+            System.out.println(" * * * * *  ==================================");
+        }
+        for (int i = 0; i < 6; i ++) {
+            System.out.println("==============================================");
+        }
+
+        //Exercise 15 
+
+        int a , b, temp;
+        System.out.print("Enter value for a: ");
+        a = sc.nextInt();
+        System.out.print("Enter value for b: ");
+        b = sc.nextInt();
+
+        temp = a;
+        a = b;
+        b = temp;
+        System.out.printf("Swap a is %d\nb is %d\n",a,b);
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
