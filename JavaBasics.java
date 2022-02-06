@@ -117,7 +117,7 @@ public class JavaBasics {
         System.out.println("Area is " + width + " * " + height + " = " + (width * height));
         System.out.println("Perimiter is 2 * " + width + " + " + height + " = " + (2*(width + height)));
 
-        */
+        
         //Exercise 14 
         for (int i = 0; i < 4; i ++) {
             System.out.println("* * * * * * ==================================");
@@ -128,7 +128,6 @@ public class JavaBasics {
         }
 
         //Exercise 15 
-
         int a , b, temp;
         System.out.print("Enter value for a: ");
         a = sc.nextInt();
@@ -139,6 +138,49 @@ public class JavaBasics {
         a = b;
         b = temp;
         System.out.printf("Swap a is %d\nb is %d\n",a,b);
+        */ 
+        //Excercise 16
+        System.out.println(" +\"\"\"\"\"+");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  |");
+        System.out.println(" | '-' |");
+        System.out.println(" +-----+");
+
+        //Excercise 17
+        long binary1, binary2;
+        int i = 0, remainder = 0;
+        int[] sum = new int[20];
+        Scanner in = new Scanner(System.in);
+      
+        System.out.print("Input first binary number: ");
+        binary1 = in.nextLong();
+        System.out.print("Input second binary number: ");
+        binary2 = in.nextLong();
+      
+        while (binary1 != 0 || binary2 != 0) 
+        {
+         sum[i++] = (int)((binary1 % 10 + binary2 % 10 + remainder) % 2);
+         remainder = (int)((binary1 % 10 + binary2 % 10 + remainder) / 2);
+         binary1 = binary1 / 10;
+         binary2 = binary2 / 10;
+        }
+        if (remainder != 0) {
+         sum[i++] = remainder;
+        }
+        --i;
+        System.out.print("Sum of two binary numbers: ");
+        while (i >= 0) {
+         System.out.print(sum[i--]);
+        }
+         System.out.print("\n");  
+
+
+        // Exercise 18 
+        
+
+
+
+
 
 
 
