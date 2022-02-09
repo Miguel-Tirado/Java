@@ -5,7 +5,7 @@ public class Exercise19 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long bin1;
-        int i = 0, remainder = 0, place = 0;
+        int i = 0, place = 0;
         int[] value = new int[20];
         int decimal = 0;
 
@@ -25,6 +25,6 @@ public class Exercise19 {
         while (i >= 0) {
             System.out.print(value[i--]);
         }
-
+        sc.close();
     }
 }
