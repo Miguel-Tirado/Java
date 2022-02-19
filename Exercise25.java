@@ -22,6 +22,7 @@ public class Exercise25 {
         }
 
         System.out.println("The decimal number is: " + octal);
+        
         sc.close();
     }
 }
